@@ -1,5 +1,5 @@
 # anm
-Asyncio Netminko
+Makes the login (connection) process of Netmiko asynchron to speed up things.
 
 ## Simple Example
 ```python
