@@ -17,13 +17,17 @@ class NetworkDevice():
         asyncio.run_coroutine_threadsafe(self.async_login(), self.loop)
 
     async def async_login(self):
-        self.con = ConnectHandler(**{
-            'device_type': self.device_type,
-            'ip': self.ip,
-            'username': self.username,
-            'password': self.password
-        })
-        self.session = True
+        try:
+            self.con = ConnectHandler(**{
+                'device_type': self.device_type,
+                'ip': self.ip,
+                'username': self.username,
+                'password': self.password
+            })
+            self.session = True
+        except:
+            self.session = False
+            self.error = 'Login Error'
         self.loop.call_soon_threadsafe(self.loop.stop)
 
     def __init__(self, ip, username, password, device_type='cisco_ios'):
@@ -34,3 +38,4 @@ class NetworkDevice():
         self.session = False
         self.con = None
         self.loop = None
+        self.error = False
