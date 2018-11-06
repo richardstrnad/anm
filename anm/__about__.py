@@ -4,7 +4,7 @@ __all__ = [
 ]
 
 __title__ = 'anm'
-__summary__ = 'Asyncio Implementation of Netminko'
+__summary__ = 'Asyncio Implementation of Netmiko'
 __uri__ = 'https://github.com/richardstrnad/anm'
 
 __version__ = '0.1.2'
