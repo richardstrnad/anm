@@ -16,4 +16,9 @@ while True:
         print(a.con.send_command('sh version'))
         print(b.con.send_command('sh version'))
         break
+
+while True:
+    if a.exec_done and b.exec_done:
+        print(a.exec_done)
+        print(b.exec_done)
 ```
