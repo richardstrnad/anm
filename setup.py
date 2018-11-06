@@ -12,7 +12,7 @@ with open(os.path.join(base_dir, 'anm', '__about__.py')) as f:
 
 setup(name=about['__title__'],
       version=about['__version__'],
-      description=['__summary__'],
+      description=about['__summary__'],
       author=about['__author__'],
       author_email=about['__email__'],
       packages=['anm'],
