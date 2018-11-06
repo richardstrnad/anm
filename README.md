@@ -1,5 +1,5 @@
 # anm
-Makes the login (connection) process of Netmiko asynchron to speed up things.
+Makes the login & command sending of Netmiko asynchron to speed up things.
 
 ## Simple Example
 ```python
