@@ -7,9 +7,9 @@ __title__ = 'anm'
 __summary__ = 'Asyncio Implementation of Netmiko'
 __uri__ = 'https://github.com/richardstrnad/anm'
 
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 __author__ = 'Richard Strnad'
 __email__ = 'richard@strnad.ch'
 
-__copyright__ = '2018 %s' % __author__
+__copyright__ = '2019 %s' % __author__
